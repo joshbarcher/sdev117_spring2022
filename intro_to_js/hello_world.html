@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>My First JS Page</title>
+	</head>
+	<body>
+		<h1>My First JS Page</h1>
+
+		<!-- this list is empty until my JS code puts an item into it -->
+		<ul class="things">
+			<!-- innerHTML goes here! -->
+		</ul>
+
+		<ul class="things">
+
+		</ul>
+
+		<script>
+			//this is a popup alert box
+			alert("Hello, world!");
+            alert("I built this page - Josh B. Archer");
+
+			alert("Here is mathematical PI: " + Math.PI);
+			alert("Here is a random number: " + Math.random());
+
+            //send output to the browser console
+			console.log("Hello, world!");
+            console.log("Here is mathematical PI: " + Math.PI);
+            console.log("Here is a random number: " + Math.random());
+
+            //update an element on the page
+			let list = document.querySelector(".things");
+			list.innerHTML += "<li>Hello</li>";
+            list.innerHTML += "<li>" + Math.random() + "</li>";
+            list.innerHTML += "<li>" + Math.random() + "</li>";
+		</script>
+	</body>
+</html>
