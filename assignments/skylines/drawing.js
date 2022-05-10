@@ -33,7 +33,13 @@ function drawRandomBox()
     let x = generateRandom(0, 250);
     let y = generateRandom(0, 250);
 
-    context.fillStyle = "rgb(150, 150, 150)";
+    //random color components
+    let r = generateRandom(0, 255);
+    let g = generateRandom(0, 255);
+    let b = generateRandom(0, 255);
+
+    context.fillStyle = `rgb(${r}, ${g}, ${b})`;
+    //context.fillStyle = "rgb(" + r + ", " + g + ", " + b + ")";
     context.fillRect(x, y, 20, 20);
 }
 
