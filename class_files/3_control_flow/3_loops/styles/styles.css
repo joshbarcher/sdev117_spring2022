@@ -1,0 +1,31 @@
+html {
+    background: #000000;
+    background-image: url("../images/wood.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+}
+
+div.form-group {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+div.form-group label {
+    padding-right: 10px;
+}
+
+img {
+    width: 50px;
+}

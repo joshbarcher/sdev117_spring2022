@@ -1,0 +1,33 @@
+html {
+    background-color: bisque;
+}
+
+body {
+    background-color: cornsilk;
+    width: 500px;
+    margin: 0 auto;
+}
+
+table {
+    width: 400px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, tr, td {
+    border: 1px solid black;
+}
+
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+}
+
+th, td {
+    padding: 4px;
+}

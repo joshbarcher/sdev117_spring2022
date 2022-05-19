@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+div {
+    border: 1px solid maroon;
+    padding: 10px;
+}
+
+img {
+    width: 50%;
+    float: right;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.bright {
+    background-color: beige;
+    color: maroon;
+}
+
+.highlighted {
+    background-color: #c6c6b3;
+    color: #960101;
+}

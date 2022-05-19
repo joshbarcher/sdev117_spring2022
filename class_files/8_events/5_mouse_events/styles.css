@@ -1,0 +1,22 @@
+body {
+}
+
+div#container {
+    width: 600px;
+    height: 600px;
+    background-color: lightcoral;
+}
+
+img {
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+input {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+}

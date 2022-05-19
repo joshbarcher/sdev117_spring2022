@@ -1,0 +1,21 @@
+section label {
+    width: 60px;
+    display: inline-block;
+    margin: 12px 0;
+}
+
+aside {
+    color: red;
+    padding: 2px;
+    display: none;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+button {
+    margin-top: 6px;
+}

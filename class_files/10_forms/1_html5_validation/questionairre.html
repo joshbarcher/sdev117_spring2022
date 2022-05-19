@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <section>
+            <label>Name:</label>
+            <input type="text" required
+                   minlength="3" maxlength="10">
+        </section>
+
+        <section>
+            <label>Age:</label>
+            <input type="number" required
+                   min="1" max="100">
+        </section>
+
+        <section>
+            <label>Date you heard about us:</label>
+            <input type="date" required>
+        </section>
+
+        <section>
+            <label>Email:</label>
+            <input type="email" required>
+        </section>
+
+        <section>
+            <label>Phone:</label>
+            <input type="text" required
+                   pattern="\d{3}-\d{3}-\d{4}">
+        </section>
+        <button>Submit!</button>
+    </form>
+</body>
+</html>

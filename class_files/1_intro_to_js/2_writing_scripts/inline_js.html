@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inline Code</title>
+
+        <script>
+            //calculate the number of milliseconds
+            //since new years!
+            let newYears  = new Date(2021, 0, 1).getTime();
+            let now = new Date().getTime();
+            let milliseconds = now - newYears;
+        </script>
+    </head>
+    <body>
+        <p>The number of milliseconds elapsed
+            since new years is: <span></span></p>
+
+        <script>
+            let span = document.querySelector("span");
+            span.innerHTML = milliseconds;
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,26 @@
+form fieldset {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+}
+
+section {
+    margin: 10px;
+}
+
+section label {
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="text"], input[type="number"], select {
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 3px;
+    width: 200px;
+}
+
+select {
+    width: 210px;
+    margin-left: -4px;
+}

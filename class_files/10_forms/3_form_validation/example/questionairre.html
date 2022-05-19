@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <section>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <aside id="name-error">Name must be 3-10 characters</aside>
+        </section>
+
+        <section>
+            <label for="age">Age:</label>
+            <input type="number" id="age">
+            <aside id="age-error">Age must be in range 1-100</aside>
+        </section>
+
+        <section>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone">
+            <aside id="phone-error">Phone number must be formatted xxx-xxx-xxxx</aside>
+        </section>
+
+        <section>
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <aside id="email-error">Email must be properly formatted</aside>
+        </section>
+
+        <section>
+            <label for="applied">Date applied:</label>
+            <input type="date" id="applied">
+            <aside id="applied-error">Date applied must be properly formatted</aside>
+        </section>
+
+        <section>
+            <label>Age</label>
+            <select name="age">
+                <option value="child">Less than 13</option>
+                <option value="teen">13-18</option>
+                <option value="adult">18-50</option>
+                <option value="senior">51+</option>
+            </select>
+        </section>
+
+        <section>
+            <label>Gender</label>
+            <div><input type="radio" name="gender" value="M"><label>Male</label></div>
+            <div><input type="radio" name="gender" value="F"><label>Female</label></div>
+            <div><input type="radio" name="gender" value="O"><label>Other</label></div>
+        </section>
+
+        <section>
+            <label>How did you hear about us?</label>
+            <div>
+                <input type="checkbox" name="advertisement" value="advert">
+                <label>Advertisement</label>
+            </div>
+            <div>
+                <input type="checkbox" name="email-contact" value="email">
+                <label>Email</label>
+            </div>
+            <div>
+                <input type="checkbox" name="magazine" value="magazine">
+                <label>Magazine</label>
+            </div>
+        </section>
+
+        <button id="submit">Submit!</button>
+    </form>
+</body>
+</html>
+

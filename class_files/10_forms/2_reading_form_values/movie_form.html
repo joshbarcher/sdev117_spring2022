@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Favorite Movie Details</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>Enter your favorite movie details!</h1>
+            <section>
+                <label for="title">Title</label>
+                <input type="text" id="title">
+            </section>
+
+            <fieldset>
+                <legend>Genre</legend>
+                <section>
+                    <input type="radio" name="genre"
+                           id="horror" value="horror">
+                    <label for="horror">Horror</label>
+                </section>
+                <section>
+                    <input type="radio" name="genre"
+                           id="action" value="action">
+                    <label for="action">Action</label>
+                </section>
+                <section>
+                    <input type="radio" name="genre"
+                           id="romance" value="romance">
+                    <label for="romance">Romance</label>
+                </section>
+                <section>
+                    <input type="radio" name="genre"
+                           id="comedy" value="comedy">
+                    <label for="comedy">Comedy</label>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Properties</legend>
+                <section>
+                    <label for="length">Length</label>
+                    <select name="length" id="length">
+                        <option value="brief">&lt; 30 minutes</option>
+                        <option value="short">30-60 minutes</option>
+                        <option value="average">61-90 minutes</option>
+                        <option value="long">&gt; 90 minutes</option>
+                    </select>
+                </section>
+                <section>
+                    <label for="rating">Rating</label>
+                    <select name="rating" id="rating">
+                        <option value="1">1 star</option>
+                        <option value="2">2 star</option>
+                        <option value="3">3 star</option>
+                        <option value="4">4 star</option>
+                        <option value="5">5 star</option>
+                    </select>
+                </section>
+            </fieldset>
+            <button>Submit!</button>
+        </form>
+
+        <div id="summary">
+
+        </div>
+    </body>
+</html>

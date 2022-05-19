@@ -1,0 +1,32 @@
+html {
+    background-color: #8B4513;
+}
+
+body {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #DDCCAA;
+    padding-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100px;
+    border: 1px solid black;
+    padding: 4px;
+    margin: 10px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+img#portrait {
+    display: block;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+

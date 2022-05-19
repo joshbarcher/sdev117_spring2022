@@ -18,6 +18,15 @@ context.fillRect(20, 200, 90, 80);
 //generate a random location for a rectangle
 drawMultipleBoxes(100);
 
+for (let i = 1; i <= 10; i++)
+{
+    let x = generateRandom(0, 250);
+    let y = generateRandom(0, 250);
+
+    context.fillStyle = `rgb(0, 0, 0)`;
+    context.fillRect(x, y, 20, 20);
+}
+
 //functions down below here...
 
 function drawMultipleBoxes(numBoxes)
@@ -63,11 +72,30 @@ function generateRandom(low, high)
     return num;
 }
 
+//this will draw your entire scene
+scene();
 
+function scene()
+{
+    drawBackground();
+    drawWater();
+    drawGround();
+}
 
+function drawBackground()
+{
+    console.log("background");
+}
 
+function drawWater()
+{
+    console.log("water");
+}
 
-
+function drawGround()
+{
+    console.log("ground");
+}
 
 
 

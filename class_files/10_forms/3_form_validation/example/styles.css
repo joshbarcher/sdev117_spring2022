@@ -1,0 +1,35 @@
+section {
+    margin: 12px 0;
+}
+
+section label {
+    width: 120px;
+    display: inline-block;
+    margin: 0;
+}
+
+aside {
+    color: red;
+    padding: 2px;
+    display: none;
+}
+
+input, select {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+    width: 150px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-left: 125px;
+}
+
+label {
+    margin: 0;
+}
+
+button {
+    margin-top: 6px;
+}
