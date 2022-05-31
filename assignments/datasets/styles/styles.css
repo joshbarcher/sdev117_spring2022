@@ -1,0 +1,9 @@
+/* layout logic */
+body {
+    display: grid;
+    width: 900px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* your styles go here... */
