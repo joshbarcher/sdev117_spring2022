@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Create-Account Form</title>
+
+		<link rel="stylesheet" href="styles/form_styles.css">
+		<script src="scripts/handle_form.js"></script>
+	</head>
+
+	<body>
+		<h1>Create a new account!</h1>
+		<form action="success.html" name="account-form">
+			<!-- email/password -->
+			<section>
+				<label for="user-email">Email</label>
+				<input type="email" id="user-email" required>
+			</section>
+
+			<section>
+				<label for="user-pwd">Password</label>
+				<input type="password" id="user-pwd" required
+				       minlength="8" maxlength="20">
+			</section>
+
+			<!-- security question -->
+			<fieldset>
+				<legend>Account Security</legend>
+				<section>
+					<label for="user-sec-question">Security Question</label>
+					<select id="user-sec-question">
+						<option>Who was your favorite pet?</option>
+						<option>Name your elementary school.</option>
+						<option>What city were you born in?</option>
+						<option>Who was your first pet?</option>
+					</select>
+				</section>
+				<section>
+					<label for="user-sec-answer">Answer</label>
+					<input type="text" id="user-sec-answer">
+				</section>
+			</fieldset>
+
+			<!-- personal details -->
+			<section>
+				<label for="user-bday">Birthdate</label>
+				<input type="date" id="user-bday" required>
+			</section>
+
+			<section>
+				<label for="user-phone">Phone Number:</label>
+				<input type="text" id="user-phone" required
+					   placeholder="111-222-3333"
+				       pattern="\d{3}-\d{3}-\d{4}">
+			</section>
+
+			<!-- biography -->
+
+			<button type="submit">Create Account!</button>
+		</form>
+	</body>
+</html>

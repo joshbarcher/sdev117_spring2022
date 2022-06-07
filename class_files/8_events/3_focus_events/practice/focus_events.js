@@ -5,23 +5,24 @@ window.onload = function() {
     let list = document.getElementById("city");
     list.innerHTML += "<option>Portland</option>";
 
-    //register focus events when the page loads
+    //register events when the page loads
     addFocusEvents();
+    addDoubleClickEvents();
 };
 
 function addFocusEvents()
 {
     //select all input buttons
-    let tBoxes = document.querySelectorAll("input, select");
+    let formElements = document.querySelectorAll("input, select");
 
-    for (let i = 0; i < tBoxes.length; i++)
+    for (let i = 0; i < formElements.length; i++)
     {
-        let tBox = tBoxes[i];
-        tBox.onfocus = function() { //the box gained focus
-            tBox.style.backgroundColor = "lightblue";
+        let element = formElements[i];
+        element.onfocus = function() { //the box gained focus
+            element.style.backgroundColor = "lightblue";
         };
-        tBox.onblur = function() { //the box lost focus
-            tBox.style.backgroundColor = "";
+        element.onblur = function() { //the box lost focus
+            element.style.backgroundColor = "";
         };
     }
 }
@@ -31,9 +32,27 @@ function addFocusEvents()
 //when the box is double-clicked it will remove all
 //text in the box
 
+function addDoubleClickEvents()
+{
+    let textboxes = document.querySelectorAll("input[type='text']");
 
+    for (let i = 0; i < textboxes.length; i++)
+    {
+        let box = textboxes[i];
+        box.ondblclick = clearsTextbox;
+    }
+}
 
+function clearsTextbox(event)
+{
+    //element is the form control that was double clicked
+    let element = event.target;
 
+    console.log("Double clicked");
+
+    //clear out textbox contents here...
+    element.value = "";
+}
 
 
 

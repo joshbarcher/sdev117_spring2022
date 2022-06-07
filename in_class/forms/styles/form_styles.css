@@ -1,0 +1,32 @@
+section {
+    margin: 15px;
+    border: solid 1px darkblue;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* give each of the labels the same width
+   to align the controls (textboxes, drop-downs)
+   next to them */
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+fieldset {
+    padding-left: 0;
+}
+
+input, select {
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
